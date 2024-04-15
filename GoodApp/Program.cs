@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using GoodApp.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<GoodAppContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("GoodAppContext") ?? throw new InvalidOperationException("Connection string 'GoodAppContext' not found.")));
 
 // Add services to the container.
 

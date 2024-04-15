@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/centralindia/connectors/ConnectionStringsGoodAppContext_4902D08943",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/mssqls-goodapp-dev/databases/mssql-goodapp-dev",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:GoodAppContext",
+      "dynamicId": null
+    }
+  }
+}
